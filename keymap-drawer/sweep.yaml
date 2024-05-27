@@ -36,10 +36,10 @@ layers:
   - $$mdi:backspace-outline$$
   '1':
   - $$mdi:keyboard-tab$$
-  - VOLUME DOWN
-  - UP ARROW
-  - VOLUME UP
-  - PAGE UP
+  - $$mdi:cursor-default-click-outline$$
+  - {t: '$$mdi:cursor-default-click-outline$$', s: '3', type: text_with_symbol}
+  - $$mdi:cursor-default-click$$
+  - KP NUMLOCK
   - '='
   - '1'
   - '2'
@@ -47,9 +47,9 @@ layers:
   - '`'
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
-  - PAGE DOWN
+  - UP ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - '0'
   - '4'
   - '5'
@@ -57,9 +57,9 @@ layers:
   - ''''
   - $$mdi:apple-keyboard-control$$
   - '['
-  - $$mdi:volume-mute$$
+  - (
   - ']'
-  - AC HOME
+  - )
   - '-'
   - '7'
   - '8'
@@ -71,21 +71,21 @@ layers:
   - +
   '2':
   - $$mdi:keyboard-tab$$
-  - $$mdi:cursor-default-click-outline$$
-  - '&mkp MCLK'
-  - $$mdi:cursor-default-click$$
+  - AC HOME
+  - END
+  - INS
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - VOLUME UP
   - F1
   - F2
   - F3
   - F10
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - KP NUMLOCK
+  - PAGE UP
+  - PAGE DOWN
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - VOLUME DOWN
   - F4
   - F5
   - F6
@@ -95,7 +95,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - MUTE
   - F7
   - F8
   - F9
