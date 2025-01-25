@@ -34,14 +34,14 @@
         };
         td_l1_inner: td_nav_layer_inner {
             compatible = "zmk,behavior-tap-dance";
-            label = "td_nav_layer_inner";
+            label = "td_l1_inner";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp SQT>, <&tog 1>;
         };
         td_l1_fast: td_nav_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "td_nav_layer";
+            label = "td_l1_fast";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
@@ -50,14 +50,14 @@
         };
         td_l2_inner: td_nav_layer_inner {
             compatible = "zmk,behavior-tap-dance";
-            label = "td_nav_layer_inner";
+            label = "td_l2_inner";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp TAB>, <&tog 2>;
         };
         td_l2_fast: td_nav_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "td_nav_layer";
+            label = "td_l2_fast";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
