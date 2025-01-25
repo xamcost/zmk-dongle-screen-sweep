@@ -23,7 +23,7 @@ manifest:
       revision: main
     - name: zmk-dongle-display
       remote: englmaxi
-      revision: win
+      revision: main
     - name: zmk-hid-trackball-interface
       remote: englmaxi
       revision: main
