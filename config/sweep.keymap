@@ -12,9 +12,6 @@
 // Cut Copy Paste macros
 #define HTL(key) &htl LG(key) key
 
-// Layer tap dance macros
-#define TDMT(key) &td_mt key key
-
 / {
     behaviors {
         ht: hold_tap {
@@ -33,11 +30,17 @@
             tapping-term-ms = <400>;
             bindings = <&kp>, <&kp>;
         };
-        td_mt: tap_dance_mod_tap {
+        td_mt1: tap_dance_l1 {
             compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo>, <&tog>;
+            bindings = <&mo 1>, <&tog 1>;
+        };
+        td_mt2: tap_dance_l2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 2>, <&tog 2>;
         };
         // Tap dance too slow with hold behavior
         // Workaround below (see https://github.com/zmkfirmware/zmk/issues/1691#issuecomment-1455196468)
@@ -136,7 +139,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      HTL(X)     HTL(C)     HTL(V)     &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             TDMT(2)    &kp BSPC       &kp SPACE  TDMT(1)
+                                             &td_mt1    &kp BSPC       &kp SPACE  &td_mt2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
